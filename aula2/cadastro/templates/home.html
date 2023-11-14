@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST">
+        {% csrf_token %}
+        
+        <input id="word" type="text" name="palavra" value="" />
+        <input type="submit"> 
+        {% if count != None %}
+            <br><br>
+            Palavra digitada: {{palavra}}<br>
+            Número de caracteres: {{count}}
+        {% endif %}
+    </form>
+    
+</body>
+</html>
