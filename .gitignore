@@ -2,3 +2,5 @@
 *venv
 *pycache*
 data.json
+*sqlite3
+*.db
